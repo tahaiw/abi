@@ -4,7 +4,7 @@ const logconfig = require("../configs/logconfig.json")
 const rolconfig = require("../configs/rolconfig.json")
 
 module.exports = async client => {
-  client.user.setPresence({ activity: { name: `dev by ❤️ where was i` , type: "PLAYING"}, status: 'idle' })
+  client.user.setPresence({ activity: { name: `` , type: "WATCHING"}, status: 'online' })
   let botyaziyorkanalii = client.channels.cache.get(serverconfig.botyaziyorkanali)
   if(botyaziyorkanalii) botyaziyorkanalii.startTyping().then(console.log("Bot yazıyor işlemi başarılı!"))
   .catch(err => console.error("Bot yazıyor işlemi başarısız!"));
